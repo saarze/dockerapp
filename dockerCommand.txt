@@ -1,0 +1,49 @@
+
+FROM
+RUN
+USER
+WORKDIR
+COPY
+ADD
+CMD
+
+
+docker-machine ls
+docker ps a
+docker exec 
+docker run 
+docker build 
+docker start/stop
+docker images
+docker inspect
+docker login
+docker push
+docker containers links //not a command
+docker network ls
+docker network create --driver bridge my_bridge
+docker network inspect ...
+docker network connect bridge container_1
+
+
+
+docker run -d -p 5000:5000 --link container_to_link_to_name container_start
+docker run -d --net none busybox
+              --net host busybox
+              
+              
+              
+Multi host networking through overlay network(swarm mode)
+Widely used in production
+ 
+docker-compose up
+docker-compse up --build
+docker-compose logs
+docker-compose ps
+docker-compose logs -f
+docker-compose stop/start
+docker-compose rm
+
+docker networks are: closed or None network, Bridge network, Host nertwork, Overlay network
+ 
+ None network: isolated container. No intereface to outside world.
+ Bridge network: 
